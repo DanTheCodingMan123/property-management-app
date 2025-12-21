@@ -1,12 +1,10 @@
-import Login from "../components/Login"
+import {LoginButton, LoginInput} from "../components/Login"
 
 export default function LoginPage() {
     return <main>
-        <h1>Login Page</h1>
-        <h1>Username</h1>
-        <textarea></textarea>
-        <h1>Password</h1>
-        <textarea></textarea>
-        <Login />
+        <label className="flex font-serif items-center justify-center p-10 text-2xl tracking-widest">Login Page</label>
+        <LoginInput label="Username" type = "email" />
+        <LoginInput label="Password" type = "password" />
+        <LoginButton />
         </main>
 }
