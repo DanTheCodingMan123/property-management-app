@@ -46,6 +46,7 @@ export function LoginInput (props: { default: string; type?: string}) {
                 px-2
                 py-1
                 text-[32px]
+                text-[#1B3C53]
                 font-gaegu
                 bg-[#E6E6E6]
                 placeholder:text-[#848484]
