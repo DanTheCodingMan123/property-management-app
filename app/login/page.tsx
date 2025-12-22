@@ -59,7 +59,7 @@ function LoginBox() {
 export default function LoginPage() {
     return (
         <main className="min-h-screen">
-             <div aria-hidden="true" className="pointers-events-none absolute inset-0 z-0">
+             <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0">
                 <Image
                     src="/footprints.png"
                     alt="Background"
