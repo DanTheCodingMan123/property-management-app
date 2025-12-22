@@ -6,7 +6,7 @@ import Image from "next/image";
 function Title() {
 
     return (
-        <header className="flex items-center gap-3 ">
+        <header className="flex items-center gap-3 p-2 ">
             <Image src="/logo.png" alt="Logo" width={55} height={68}/>
             <h1 className="
                 m-0
