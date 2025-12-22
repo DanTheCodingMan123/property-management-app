@@ -6,13 +6,13 @@ import Image from "next/image";
 function Title() {
 
     return (
-        <header className="flex items-center gap-3 p-2 ">
-            <Image src="/logo.png" alt="Logo" width={55} height={68}/>
+        <header className="flex items-center gap-3 p-3 ">
+            <Image src="/logo.png" alt="Logo" width={50} height={65}/>
             <h1 className="
                 m-0
                 text-center
                 font-gaegu 
-                pl-2
+                pl-1
                 pt-2
                 text-[39px]
                 leading-none
@@ -59,6 +59,15 @@ function LoginBox() {
 export default function LoginPage() {
     return (
         <main className="min-h-screen">
+             <div aria-hidden="true" className="pointers-events-none absolute inset-0 z-0">
+                <Image
+                    src="/footprints.png"
+                    alt="Background"
+                    fill
+                    className="object-contain"
+                    priority // Makes page render this background with priority!!!
+                />
+            </div>
             <div className="relative">
                 <Title />
             </div>
