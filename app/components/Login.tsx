@@ -27,7 +27,7 @@ export function SignUpButton() {
                <span className="text-gray-600"> Don't have an account?</span>
                <Link
                     href="/signup"
-                    className="text-[#1B3C53] underline hover:text-gray-600 text-[#1B3C53]"
+                    className="text-[#1B3C53] underline hover:text-gray-600 "
                >
                     Sign Up
                </Link>
@@ -67,7 +67,7 @@ export function ForgotPasswordButton() {
                 text-[#1B3C53]
                 hover:underline
             "
-               onClick={() => alert("Forgot Password clicked")}
+               onClick={() => alert("Too Bad!")}
           >
                Forgot password?
           </button>
@@ -94,7 +94,7 @@ export function LoginBox() {
      return (
           <div
                className="
-                w-[400px]
+                w-100
                 bg-[#D9D9D9]
                 rounded-[10px]
                 shadow-[0_4px_4px_rgba(0,0,0,0.25)]
