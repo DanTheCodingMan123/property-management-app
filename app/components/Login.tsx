@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function LoginButton() {
   return (
-    <button
+    <button type="submit"
       className="
                 w-full
                 rounded-[10px]
@@ -35,9 +35,10 @@ export function SignUpButton() {
   );
 }
 
-export function LoginInput(props: { default: string; type?: string }) {
+export function LoginInput(props: { name: string; default: string; type?: string }) {
   return (
     <input
+      name={props.name}
       type={props.type || "text"}
       placeholder={props.default}
       className="
@@ -70,5 +71,53 @@ export function ForgotPasswordButton() {
     >
       Forgot password?
     </button>
+  );
+}
+
+export function LoginBox() {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    const email = data.get('email');
+    const password = data.get('password');
+    console.log('Users email is:', email);
+    console.log('Users password is:', password);
+  }
+  return (
+    <div
+      className="
+                w-[400px]
+                bg-[#D9D9D9]
+                rounded-[10px]
+                shadow-[0_4px_4px_rgba(0,0,0,0.25)]
+                px-10
+                py-8
+                flex
+                flex-col
+                gap-5
+            "
+    >
+      <h1
+        className="
+                m-0
+                text-center
+                font-gaegu 
+                text-[48px]
+                leading-none
+                tracking-widest 
+                text-[#1B3C53]
+            "
+      >
+        Login
+      </h1>
+
+      <SignUpButton />
+      <form className="contents" onSubmit={handleSubmit}>
+        <LoginInput name='email' default="email address" type="email" />
+        <LoginInput name='password' default="password" type="password" />
+        <LoginButton />
+      </form>
+      <ForgotPasswordButton />
+    </div>
   );
 }
