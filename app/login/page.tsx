@@ -44,11 +44,12 @@ export default function LoginPage() {
       </div>
       <div className="relative">
         <Title />
-      </div>
 
-      <div className="flex pt-5 items-center justify-center">
-        <LoginBox />
+         <div className="flex pt-5 items-center justify-center">
+            <LoginBox />
+        </div>
       </div>
+      
     </main>
   );
 }
