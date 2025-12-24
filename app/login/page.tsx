@@ -29,7 +29,7 @@ function Title() {
 
 export default function LoginPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen relative">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 z-0"
@@ -46,10 +46,12 @@ export default function LoginPage() {
         <Title />
 
          <div className="flex pt-5 items-center justify-center">
-            <LoginBox />
+            <div className="translate-y-10">
+                <LoginBox />
+            </div>
         </div>
       </div>
-      
+
     </main>
   );
 }
