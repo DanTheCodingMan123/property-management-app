@@ -1,0 +1,1 @@
+npm i @supabase/supabase-js @supabase/ssr
