@@ -32,6 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${gaegu.variable} font-gaegu antialiased`}
+        suppressHydrationWarning
       >
         {children}
       </body>
